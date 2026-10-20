@@ -1,0 +1,30 @@
+{
+  "name": "nec-clubconnect-server",
+  "version": "1.0.0",
+  "description": "REST API for NEC ClubConnect (Node.js + Express + MongoDB)",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed": "node src/seed.js",
+    "inspect:db": "node scripts/inspect-db.js",
+    "verify:logins": "node scripts/verify-logins.js",
+    "verify:auth": "node scripts/verify-jwt-oauth.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "google-auth-library": "^11.1.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.5.0",
+    "morgan": "^1.10.0"
+  }
+}
